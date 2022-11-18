@@ -20,7 +20,7 @@ docker build -t cbwa-ca2-carlos-wilker .
 
 5. Build the container
 ```
-docker run -it --rm -p: 8080:80 cbwa-ca2-carlos-wilker
+docker run -it --rm -p 8080:80 cbwa-ca2-carlos-wilker
 ```
 6. Open your favourite browser and type:
 
