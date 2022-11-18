@@ -17,3 +17,19 @@ RUN npm install -g ionic
 
 #Install all dependencies
 RUN npm install
+
+#It creates a www folder of our project, which we will be using to deploy to nginx
+RUN npm run build --prod
+
+# use the nginx from dockerhub.
+FROM nginx:alpine
+
+#Exposing the port
+EXPOSE 80
+
+#Default location for nginx
+# rm -rf is removing recursively and forcibly a directory (and its contents) without prompting for confirmation
+RUN rm -rf /usr/share/nginx/html/*
+
+#Copy the content of my application inside the default location for nginx
+COPY --from=build /app/mobdev_ca3-main/www /usr/share/nginx/html/
