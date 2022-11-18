@@ -34,7 +34,20 @@ The application will be running and you can enjoy.
 
 ## Best cloud provider
 
-Sloppy
+It is not easy task to imagine how much traffic 10-50 will be generating monthly. It is better to count the number of calling instead.
+
+**Sloppy**
+
+Beyond the service from big Tech such Amazon, Google and Microsoft, I found an alternative option called *Sloppy.io*
+
+It is simple, fast and you can run multiple containers. The project is defined in a JSON file.
+
+For small bloggs and projects, the *basic plan cost $19 month*. You can have up to five containers and traffic up to 1 TB. You also have a 14-Day trail.
+The details of the plan include 2GB RAM, Volume Storage up to 48GB and limited support.
+
+Addionally you can update the containers with zero downtime as they start new containers and stops the older containers after the new containers are up and running.
+
+If you made a mistake when updating your container, you could easily roll back to the previous stable version with only three clicks.
 
 
 ---------------------------------------------------
